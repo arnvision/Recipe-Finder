@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder by Arn_Vision</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="IMG_20241218_193638_602.jpg" alt="Arn_Vision Logo">
+        <span>Arn_Vision</span>
+      </div>
+      <h1>Recipe Finder</h1>
+      <p>Find delicious recipes based on ingredients you have!</p>
+    </header>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+      <input type="text" id="ingredient" placeholder="Enter ingredients (e.g., chicken, rice)" required>
+      <select id="diet">
+        <option value="">Any Diet</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+      <select id="cuisine">
+        <option value="">Any Cuisine</option>
+        <option value="italian">Italian</option>
+        <option value="indian">Indian</option>
+        <option value="mexican">Mexican</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Recipe Results -->
+    <div id="recipeResults" class="recipe-results"></div>
+
+    <!-- Meal Planner -->
+    <div id="mealPlanner">
+      <h2>Meal Planner</h2>
+      <div class="week">
+        <div class="day" data-day="monday">Monday</div>
+        <div class="day" data-day="tuesday">Tuesday</div>
+        <div class="day" data-day="wednesday">Wednesday</div>
+        <div class="day" data-day="thursday">Thursday</div>
+        <div class="day" data-day="friday">Friday</div>
+        <div class="day" data-day="saturday">Saturday</div>
+        <div class="day" data-day="sunday">Sunday</div>
+      </div>
+    </div>
+
+    <!-- Shopping List -->
+    <div id="shoppingList">
+      <h2>Shopping List</h2>
+      <ul id="shoppingItems"></ul>
+    </div>
+
+    <!-- Favorites Section -->
+    <h2>Favorite Recipes</h2>
+    <div id="favoriteRecipes" class="recipe-results"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
